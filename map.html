@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Usage Heatmap</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        #map { height: 90vh; width: 100vw; }
+        .legend {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            color: #333;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        footer {
+            padding: 10px;
+            background: white;
+            color: #333;
+            font-size: 14px;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h2>🔥 Netflix Usage Heatmap</h2>
+
+    <div id="map"></div>
+    <script>
+        var map = L.map('map').setView([20.5937, 78.9629], 5); // Centered on India
+
+        // Light-themed map tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Netflix Usage Data
+        var highUsage = [
+            [19.0760, 72.8777, "Mumbai"], [28.7041, 77.1025, "Delhi"], [12.9716, 77.5946, "Bangalore"], 
+            [13.0827, 80.2707, "Chennai"], [22.5726, 88.3639, "Kolkata"], [18.5204, 73.8567, "Pune"], 
+            [17.3850, 78.4867, "Hyderabad"], [26.9124, 75.7873, "Jaipur"]
+        ];
+        var mediumUsage = [
+            [30.7333, 76.7794, "Chandigarh"], [23.0225, 72.5714, "Ahmedabad"], [21.1702, 72.8311, "Surat"], 
+            [25.3176, 82.9739, "Varanasi"], [21.2514, 81.6296, "Raipur"], [19.2183, 72.9781, "Navi Mumbai"], 
+            [22.3072, 73.1812, "Vadodara"], [26.8467, 80.9462, "Lucknow"]
+        ];
+        var lowUsage = [
+            [34.1526, 77.5771, "Leh"], [27.3314, 88.6138, "Gangtok"], [9.9252, 78.1198, "Madurai"], 
+            [26.1158, 91.7086, "Shillong"], [8.5241, 76.9366, "Thiruvananthapuram"], [22.5666, 88.3700, "Sundarbans"], 
+            [24.7955, 93.9427, "Imphal"], [11.4102, 76.6950, "Ooty"]
+        ];
+
+        // Heatmap Data (with intensity levels)
+        var heatData = [
+            ...highUsage.map(p => [p[0], p[1], 1.0]),   // High Usage (strong heat)
+            ...mediumUsage.map(p => [p[0], p[1], 0.6]), // Medium Usage (moderate heat)
+            ...lowUsage.map(p => [p[0], p[1], 0.3])     // Low Usage (light heat)
+        ];
+        L.heatLayer(heatData, {radius: 25, blur: 15, maxZoom: 10}).addTo(map);
+
+        // Function to add colored markers
+        function addMarkers(data, color) {
+            data.forEach(function(point) {
+                L.circleMarker([point[0], point[1]], {
+                    radius: 10,
+                    fillColor: color,
+                    color: "#000",
+                    weight: 1,
+                    opacity: 1,
+                    fillOpacity: 0.8
+                }).addTo(map).bindPopup(`<b>${point[2]}</b>`);
+            });
+        }
+        addMarkers(highUsage, "red");    // High Usage (Red)
+        addMarkers(mediumUsage, "yellow"); // Medium Usage (Yellow)
+        addMarkers(lowUsage, "blue");    // Low Usage (Blue)
+
+        // Legend
+        var legend = L.control({ position: "bottomleft" });
+        legend.onAdd = function (map) {
+            var div = L.DomUtil.create("div", "legend");
+            div.innerHTML = "<b>🔥 Netflix Usage Levels</b><br>";
+            div.innerHTML += "<span style='color:red;'>⬤ High Usage (Metro Cities)</span><br>";
+            div.innerHTML += "<span style='color:yellow;'>⬤ Medium Usage (Tier-2 Cities)</span><br>";
+            div.innerHTML += "<span style='color:blue;'>⬤ Low Usage (Remote Areas)</span>";
+            return div;
+        };
+        legend.addTo(map);
+    </script>
+    <footer>&copy; 2025 Netflix | All Rights Reserved</footer>
+
+</body>
+</html>
