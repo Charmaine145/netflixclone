@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="image-slider"></div>
+            <img src="images/netflix-logo.png" alt="Netflix Logo" class="logo">
+            <div class="nav-links">
+                <a href="#tv shows">TV shows</a>
+                <a href="#action">Action</a>
+                <a href="#comedy">Comedy</a>
+                <a href="#thriller">Thriller</a>
+                <a href="#horror">Horror</a>
+                <a href="#romance">Romance</a>
+                <a href="#drama">Drama</a>
+            </div>
+    <div class="nav-right">
+        <input type="text" class="search-bar" placeholder="Search movies,TV shows...">
+    </div>
+
+        </nav>
+    </header>
+
+<main class="main-content">
+
+
+        <!-- Category: Trending on Netflix -->
+        <section class="category">
+            <h2>Trending on Netflix</h2>
+            <div class="card-container">
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://static.independent.co.uk/2022/12/20/11/TPBE_KS_001.jpg" alt="The Pale Blue Eye" style="width:100%;height:auto;display:block;">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/ddbL9jvg77w?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>The Pale Blue Eye</h3>
+                            <p>Mystery, Crime, Drama | ⭐ 6.6</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=ddbL9jvg77w" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://m.media-amazon.com/images/M/MV5BYWZiZWI1NjQtYjMxMS00YzJkLWExYzctYmE4ZDY1MDEzMGQ0XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg" alt="The Killer" style="width:100%;height:auto;display:block;">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/ywn3EZmrjso?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>The Killer</h3>
+                            <p>Thriller, Crime | ⭐ 7.0</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=ywn3EZmrjso" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://image.tmdb.org/t/p/original/5Y5pz0NX7SZS9036I733F7uNcwK.jpg" alt="The Mother">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/8BFdFeOS3oM?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>The Mother</h3>
+                            <p>Action, Thriller | ⭐ 5.7</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=8BFdFeOS3oM" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://image.tmdb.org/t/p/original/2IRjbi9cADuDMKmHdLK7LaqQDKA.jpg" alt="All Quiet on the Western Front">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/hf8EYbVxtCY?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>All Quiet on the Western Front</h3>
+                            <p>War, Drama | ⭐ 7.8</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=hf8EYbVxtCY" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://tse2.mm.bing.net/th?id=OIP.e11vVBtW4SgZWxpWK852kgHaEO&pid=Api&P=0&h=180" alt="You People" style="width:100%;height:auto;display:block;">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/JjPIz1H9Ml0?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>You People</h3>
+                            <p>Comedy, Romance | ⭐ 5.5</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=JjPIz1H9Ml0" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category: Action Movies -->
+        <section class="category" id="action">
+            <h2>Action</h2>
+            <div class="card-container">
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://i.ytimg.com/vi/L6P3nI6VnlY/maxresdefault.jpg" alt="Extraction" style="width:100%;height:auto;display:block;">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/L6P3nI6VnlY?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>Extraction</h3>
+                            <p>Action, Thriller | ⭐ 6.8</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=L6P3nI6VnlY" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://image.tmdb.org/t/p/original/8Z8dptJEypuLoOQro1WugD855YE.jpg" alt="6 Underground" style="width:100%;height:auto;display:block;" onerror="this.src='https://via.placeholder.com/300x450?text=Poster+Not+Available'">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/T74HU2T6JYI?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>6 Underground</h3>
+                            <p>Action, Adventure | ⭐ 6.1</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=T74HU2T6JYI" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://image.tmdb.org/t/p/original/aBw8zYuAljVM1FeK5bZKITPH8ZD.jpg" alt="Triple Frontier" style="width:100%;height:auto;display:block;">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/Fo3yRLLrXQA?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>Triple Frontier</h3>
+                            <p>Action, Drama, Crime | ⭐ 6.4</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=Fo3yRLLrXQA" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://image.tmdb.org/t/p/original/8cXbitsS6dWQ5gfMTZdorpAAzEH.jpg" alt="The Gray Man">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/BmllggGO4pM?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>The Gray Man</h3>
+                            <p>Action, Thriller | ⭐ 6.5</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=BmllggGO4pM" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://image.tmdb.org/t/p/original/lAXONuqg41NwUMuzMiFvicDET9Y.jpg" alt="Red Notice">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/Pj0wz7zu3Ms?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>Red Notice</h3>
+                            <p>Action, Comedy | ⭐ 6.3</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=Pj0wz7zu3Ms" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category: TV Shows -->
+        <section class="category" id="tv shows">
+            <h2>TV Shows</h2>
+            <div class="card-container">
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://image.tmdb.org/t/p/original/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg" alt="Stranger Things" style="width:100%;height:auto;display:block;">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/b9EkMc79ZSU?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>Stranger Things</h3>
+                            <p>Sci-Fi, Thriller | ⭐ 8.7</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=b9EkMc79ZSU" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://tse4.mm.bing.net/th?id=OIP.RXDtO2hTxn4T839_Qb-WYgHaD5&pid=Api&P=0&h=180" alt="The Witcher" style="width:100%;height:auto;display:block;">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/ndl1W4ltcmg?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>The Witcher</h3>
+                            <p>Fantasy, Action | ⭐ 8.1</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=ndl1W4ltcmg" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://image.tmdb.org/t/p/original/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg" alt="Money Heist" style="width:100%;height:auto;display:block;">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/hMANIarjT50?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>Money Heist</h3>
+                            <p>Crime, Thriller | ⭐ 8.2</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=hMANIarjT50" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://image.tmdb.org/t/p/original/scZlQQYnDVlnpxFTxaIv2g0BWnL.jpg" alt="The Umbrella Academy" style="width:100%;height:auto;display:block;">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/0DAmWHxeoKw?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>The Umbrella Academy</h3>
+                            <p>Action, Drama, Fantasy | ⭐ 7.9</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=0DAmWHxeoKw" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://image.tmdb.org/t/p/original/apbrbWs8M9lyOpJYU5WXrpFbk1Z.jpg" alt="Dark" style="width:100%;height:auto;display:block;">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/ESEUoa-mz2c?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>Dark</h3>
+                            <p>Mystery, Sci-Fi | ⭐ 8.8</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=ESEUoa-mz2c" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category: Comedy -->
+        <section class="category" id="comedy">
+            <h2>Comedy</h2>
+            <div class="card-container">
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://m.media-amazon.com/images/M/MV5BNGQwZjg5YmYtY2VkNC00NzliLTljYTctNzI5NmU3MjE2ODQzXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg" alt="The Hangover" style="width:100%;height:auto;display:block;" onerror="this.src='https://image.tmdb.org/t/p/w500/ek8e8txUyUwd2BNqj6lFEerJfbq.jpg'">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/tcdUhdOlz9M?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>The Hangover</h3>
+                            <p>Comedy | ⭐ 7.7</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=tcdUhdOlz9M" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://image.tmdb.org/t/p/original/ek8e8txUyUwd2BNqj6lFEerJfbq.jpg" alt="Superbad" style="width:100%;height:auto;display:block;">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/MNpoTxeydiY?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>Superbad</h3>
+                            <p>Comedy | ⭐ 7.6</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=MNpoTxeydiY" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://tse3.mm.bing.net/th?id=OIP.p0hDHa-Gy1ld6fFyTaRZOgHaEK&pid=Api&P=0&h=180" alt="Bridesmaids" style="width:100%;height:auto;display:block;" onerror="this.src='https://m.media-amazon.com/images/M/MV5BMjAyOTMyMDU0NV5BMl5BanBnXkFtZTcwMDY0NzY2NA@@._V1_.jpg'">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/FNppLrmdyug?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>Bridesmaids</h3>
+                            <p>Comedy | ⭐ 6.8</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=FNppLrmdyug" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://tse2.mm.bing.net/th?id=OIP.XHHX21KptAM9PuUrdbl7uwHaFj&pid=Api&P=0&h=180" alt="Step Brothers" style="width:100%;height:auto;display:block;" onerror="this.src='https://m.media-amazon.com/images/M/MV5BMTcwNzUzMjU1OV5BMl5BanBnXkFtZTcwMTk1ODQ0MQ@@._V1_.jpg'">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/8QKE96wZTkw?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>Step Brothers</h3>
+                            <p>Comedy | ⭐ 6.9</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=8QKE96wZTkw" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://m.media-amazon.com/images/M/MV5BMTQ2MzYwMzk5Ml5BMl5BanBnXkFtZTcwOTI4NzUyMw@@._V1_FMjpg_UX1000_.jpg" alt="Anchorman: The Legend of Ron Burgundy" style="width:100%;height:auto;display:block;" onerror="this.src='https://image.tmdb.org/t/p/w500/5eMXvIM6ewqYl6X5iUjBjDapQO7.jpg'">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/NJQ4qEWm9lU?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>Anchorman</h3>
+                            <p>Comedy | ⭐ 7.2</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=NJQ4qEWm9lU" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category: Thriller -->
+        <section class="category" id="thriller">
+            <h2>Thriller</h2>
+            <div class="card-container">
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://image.tmdb.org/t/p/original/rGfGfgL2pEPCfhIvqHXieXFn7gp.jpg" alt="Bird Box" style="width:100%;height:auto;display:block;" onerror="this.src='https://via.placeholder.com/300x450?text=Poster+Not+Available'">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/o2AsIXSh2xo?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>Bird Box</h3>
+                            <p>Thriller, Horror | ⭐ 6.6</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=o2AsIXSh2xo" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" 
+                             src="https://www.heavenofhorror.com/wp-content/uploads/2019/09/fractured-netflix-review.jpg"
+                             alt="Fractured"
+                             style="width:100%;height:auto;display:block;"
+                             onerror="this.src='https://image.tmdb.org/t/p/w500/4GylbhsnOY4z9vUbhVmvfJfWh3z.jpg'">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/sCimThZW-Ew?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>Fractured</h3>
+                            <p>Psychological Thriller | ⭐ 6.4</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=sCimThZW-Ew" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" 
+                             src="https://tse4.mm.bing.net/th?id=OIP.oUXlevJFUmb-ICF-36UDTAHaEK&pid=Api&P=0&h=180"
+                             alt="The Stranger"
+                             style="width:100%;height:auto;display:block;"
+                             onerror="this.src='https://image.tmdb.org/t/p/w500/4GvR1Fn7k2cfKuG2pyniKQYzQfG.jpg'">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/umI-7t5Bq5Y?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>The Stranger</h3>
+                            <p>Crime, Thriller | ⭐ 6.6</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=umI-7t5Bq5Y" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" 
+                             src="https://tse3.mm.bing.net/th?id=OIP.3r11VFgxIpBXmrplchGYCwHaEK&pid=Api&P=0&h=180"
+                             alt="I Came By"
+                             style="width:100%;height:auto;display:block;"
+                             onerror="this.src='https://image.tmdb.org/t/p/w500/1X7l8bQHXxQqQZ3Q0h5J9kZ5w9C.jpg'">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/1NHcH4vFsF0?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>I Came By</h3>
+                            <p>Thriller, Crime | ⭐ 6.1</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=1NHcH4vFsF0" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" 
+                             src="https://tse3.mm.bing.net/th?id=OIP.iSCApxoaAURQeX_tM0RoYQHaEo&pid=Api&P=0&h=180"
+                             alt="The Good Nurse"
+                             style="width:100%;height:auto;display:block;"
+                             onerror="this.src='https://image.tmdb.org/t/p/w500/7I0Q7GQH7U2n5tF8kPjt8Q5LzrS.jpg'">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/2jBZBg8tI6c?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>The Good Nurse</h3>
+                            <p>Thriller, Biography | ⭐ 6.8</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=2jBZBg8tI6c" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category: Horror -->
+        <section class="category" id="horror">
+            <h2>Horror</h2>
+            <div class="card-container">
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://image.tmdb.org/t/p/original/rGfGfgL2pEPCfhIvqHXieXFn7gp.jpg" alt="Bird Box" style="width:100%;height:auto;display:block;" onerror="this.src='https://via.placeholder.com/300x450?text=Poster+Not+Available'">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/o2AsIXSh2xo?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>Bird Box</h3>
+                            <p>Horror, Sci-Fi, Thriller | ⭐ 6.6</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=o2AsIXSh2xo" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" 
+                             src="https://i.ytimg.com/vi/DYY0QJhlXjc/maxresdefault.jpg"
+                             alt="His House"
+                             style="width:100%;height:auto;display:block;"
+                             onerror="this.src='https://image.tmdb.org/t/p/w500/5mbhklGcs6xGwhHRcWLLz6McC7I.jpg'">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/6KAnKWWbvG4?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>His House</h3>
+                            <p>Horror, Mystery | ⭐ 6.5</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=6KAnKWWbvG4" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://image.tmdb.org/t/p/original/Ab8mkHmkYADjU7wQiOkia9BzGvS.jpg" alt="The Perfection" onerror="this.src='https://via.placeholder.com/300x450?text=Poster+Not+Available'">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/RZo6VTo2U4w?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>The Perfection</h3>
+                            <p>Thriller, Horror | ⭐ 6.1</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=RZo6VTo2U4w" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://image.tmdb.org/t/p/original/iHSwvRVsRyxpX7FE7GbviaDvgGZ.jpg" alt="No One Gets Out Alive" onerror="this.src='https://via.placeholder.com/300x450?text=Poster+Not+Available'">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/0VxiR2pI1h0?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>No One Gets Out Alive</h3>
+                            <p>Horror, Mystery | ⭐ 5.3</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=0VxiR2pI1h0" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" 
+                             src="https://s3.amazonaws.com/static.rogerebert.com/uploads/review/primary_image/reviews/the-book-of-eli-2010/EB20100113REVIEWS100119990AR.jpg"
+                             alt="Eli"
+                             style="width:100%;height:auto;display:block;"
+                             onerror="this.src='https://image.tmdb.org/t/p/w500/qCPMjT8nXBsLqvC2Ql9k0KXyqUJ.jpg'">
+                        <div class="movie-info">
+                            <h3>Eli</h3>
+                            <p>Horror, Mystery | ⭐ 5.8</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category: Romance -->
+        <section class="category" id="romance">
+            <h2>Romance</h2>
+            <div class="card-container">
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://image.tmdb.org/t/p/original/hKHZhUbIyUAjcSrqJThFGYIR6kI.jpg" alt="To All the Boys I've Loved Before">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/555oiY9RWM4?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>To All the Boys I've Loved Before</h3>
+                            <p>Romance, Teen, Comedy | ⭐ 7.0</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=555oiY9RWM4" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" 
+                             src="https://graziamagazine.com/us/wp-content/uploads/sites/15/2021/08/TKB3_Main_Vertical_27x40_RGB_EN-US-e1628715729425.jpg"
+                             alt="The Kissing Booth"
+                             style="width:100%;height:auto;display:block;"
+                             onerror="this.src='https://m.media-amazon.com/images/M/MV5BMTYxMDdlYjktN2M3YS00YzBlLWJhNTItYjkyYjY0NjI1ODAzXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg'">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/7bfS6seiLhk?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>The Kissing Booth</h3>
+                            <p>Romantic Comedy | ⭐ 6.0</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=7bfS6seiLhk" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://static01.nyt.com/images/2022/07/29/multimedia/29purple-hearts1/29purple-hearts1-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="Purple Hearts" style="width:100%;height:auto;display:block;" onerror="this.src='https://via.placeholder.com/300x450?text=Poster+Not+Available'">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/WTLgg8oRSBE?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>Purple Hearts</h3>
+                            <p>Romance, Drama | ⭐ 6.7</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=WTLgg8oRSBE" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://image.tmdb.org/t/p/original/5HjzYTihkH7EvOWSE7KcsF6pBMM.jpg" alt="Love in the Villa">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/MyVx3hish3U?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>Love in the Villa</h3>
+                            <p>Romantic Comedy | ⭐ 5.2</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=MyVx3hish3U" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://image.tmdb.org/t/p/original/wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg" alt="The Perfect Date">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/1rYkLIRYxw4?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>The Perfect Date</h3>
+                            <p>Romantic, Comedy | ⭐ 5.8</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=1rYkLIRYxw4" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category: Drama -->
+        <section class="category" id="drama">
+            <h2>Drama</h2>
+            <div class="card-container">
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://image.tmdb.org/t/p/original/mbm8k3GFhXS0ROd9AD1gqYbIFbM.jpg" alt="The Irishman" onerror="this.src='https://via.placeholder.com/300x450?text=Poster+Not+Available'">
+                        <div class="movie-info">
+                            <h3>The Irishman</h3>
+                            <p>Crime, Drama | ⭐ 7.8</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=WHXxVmeGQUc" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://image.tmdb.org/t/p/original/2bXbqYdUdNVa8VIWXVfclP2ICtT.jpg" alt="Marriage Story">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/BHi-a1n8t7M?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>Marriage Story</h3>
+                            <p>Drama, Romance | ⭐ 7.9</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=BHi-a1n8t7M" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" 
+                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQjc6VMm2vfUT5CwW0QpMUXkUxITETWjvakg&s"
+                             alt="The Trial of the Chicago 7"
+                             style="width:100%;height:auto;display:block;"
+                             onerror="this.src='https://www.impawards.com/2020/posters/trial_of_the_chicago_seven_ver2.jpg'">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/FVb6EdKDBfU?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>The Trial of the Chicago 7</h3>
+                            <p>Drama, History | ⭐ 7.8</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=FVb6EdKDBfU" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOWZfitdylQSFwNhGvAU0_e1Zo5Ql4TxcfVg&s" alt="Ma Rainey's Black Bottom" style="width:100%;height:auto;display:block;" onerror="this.src='https://via.placeholder.com/300x450?text=Poster+Not+Available'">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/ord7gP151vk?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>Ma Rainey's Black Bottom</h3>
+                            <p>Drama, Music | ⭐ 7.0</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=ord7gP151vk" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div class="movie-card">
+                        <img class="thumbnail" src="https://occ-0-8407-90.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABefDThU57k_1abySEx_xurj04uolqe2KxdfHRmmGNEJeLFOKNCuHYrwPYIrGXSAtGcoCIg5IEt9sihk84drfq_IMnbk-oXzyfZnq.jpg?r=bd4" alt="The Dig" style="width:100%;height:auto;display:block;" onerror="this.src='https://via.placeholder.com/300x450?text=Poster+Not+Available'">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/XEWbLQWgKnQ?autoplay=1&mute=1&controls=0" allow="autoplay"></iframe>
+                        <div class="movie-info">
+                            <h3>The Dig</h3>
+                            <p>Biography, Drama | ⭐ 7.1</p>
+                        </div>
+                        <a class="youtube-button" href="https://www.youtube.com/watch?v=XEWbLQWgKnQ" target="_blank">Play on YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Netflix Usage Map Section -->
+        <section class="map-section">
+            <h2>🔥 Netflix Usage Heatmap</h2>
+            <div id="netflix-map"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__row__1">
+            <h4>Questions? Call 000-800-040-1843</h4>
+            <a href="form.html" class="feedback-link">Give Feedback</a>
+        </div>
+        <div class="footer__row__2">
+            <div class="column__1">
+                <p>FAQ</p>
+                <p>Investor Relations</p>
+                <p>Privacy</p>
+                <p>Speed Test</p>
+            </div>
+            <div class="column__2">
+                <p>Help Centre</p>
+                <p>Jobs</p>
+                <p>Cookie Preferences</p>
+                <p>Legal Notices</p>
+            </div>
+            <div class="column__3">
+                <p>Account</p>
+                <p>Ways to Watch</p>
+                <p>Corporate Information</p>
+                <p>Only on Netflix</p>
+            </div>
+            <div class="column__4">
+                <p>Media Centre</p>
+                <p>Terms of Use</p>
+                <p>Contact Us</p>
+            </div>
+        </div>
+        <div class="footer__row__3">
+            <div class="dropdown__container">
+                <i class="fas fa-globe"></i>
+                <select name="languages" id="languagesSelect" class="language__drop__down">
+                    <option value="english" selected>English</option>
+                    <option value="hindi">Hindi</option>
+                </select>
+            </div>
+        </div>
+        <div class="footer__row__4">
+            <p>Netflix India</p>
+        </div>
+    </footer>
+
+    <!-- Map Scripts -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var map = L.map('netflix-map').setView([20.5937, 78.9629], 5); // Centered on India
+
+            // Dark-themed map tiles
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                attribution: '© OpenStreetMap contributors, © CARTO'
+            }).addTo(map);
+
+            // Netflix Usage Data
+            var highUsage = [
+                [19.0760, 72.8777, "Mumbai"], [28.7041, 77.1025, "Delhi"], 
+                [12.9716, 77.5946, "Bangalore"], [13.0827, 80.2707, "Chennai"]
+            ];
+            var mediumUsage = [
+                [22.5726, 88.3639, "Kolkata"], [18.5204, 73.8567, "Pune"],
+                [17.3850, 78.4867, "Hyderabad"], [26.9124, 75.7873, "Jaipur"]
+            ];
+            var lowUsage = [
+                [30.7333, 76.7794, "Chandigarh"], [23.0225, 72.5714, "Ahmedabad"],
+                [21.1702, 72.8311, "Surat"], [25.3176, 82.9739, "Varanasi"]
+            ];
+
+            // Heatmap Data with Netflix red color
+            var heatData = [
+                ...highUsage.map(p => [p[0], p[1], 1.0]),
+                ...mediumUsage.map(p => [p[0], p[1], 0.6]), 
+                ...lowUsage.map(p => [p[0], p[1], 0.3])
+            ];
+            
+            L.heatLayer(heatData, {
+                radius: 25,
+                blur: 15,
+                maxZoom: 10,
+                gradient: {0.3: 'blue', 0.6: 'yellow', 1: 'red'}
+            }).addTo(map);
+
+            // Add markers with Netflix styling
+            function addMarkers(data, color) {
+                data.forEach(function(point) {
+                    L.circleMarker([point[0], point[1]], {
+                        radius: 8,
+                        fillColor: color,
+                        color: "#fff",
+                        weight: 1,
+                        opacity: 1,
+                        fillOpacity: 0.8
+                    }).addTo(map).bindPopup(`<b>${point[2]}</b><br>Netflix Usage`);
+                });
+            }
+            
+            addMarkers(highUsage, "#e50914");    // Netflix red
+            addMarkers(mediumUsage, "#f5f5f1");  // Netflix light gray 
+            addMarkers(lowUsage, "#221f1f");     // Netflix dark gray
+
+            // Netflix-style legend with color indicators
+            var legend = L.control({position: 'bottomleft'});
+            legend.onAdd = function(map) {
+                var div = L.DomUtil.create('div', 'legend');
+                div.innerHTML = `
+                    <h4>Netflix Usage Levels</h4>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background:#e50914"></span>
+                        <span class="legend-label">High Usage (Metro Cities)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background:#f5f5f1"></span>
+                        <span class="legend-label">Medium Usage (Tier-2 Cities)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background:#221f1f"></span>
+                        <span class="legend-label">Low Usage (Remote Areas)</span>
+                    </div>
+                `;
+                return div;
+            };
+            legend.addTo(map);
+        });
+    </script>
+</body>
+</html>
