@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Media Player</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #000000, #1c1c1c);
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo {
+            font-size: 50px;
+            font-weight: bold;
+            color: red;
+            margin: 20px 0;
+        }
+        .container {
+            text-align: center;
+            width: 90%;
+            max-width: 800px;
+            margin-bottom: 30px;
+        }
+        .media-section {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+            background: rgba(34, 34, 34, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+        }
+        .video-container img {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+        }
+        .video-container video {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            pointer-events: none;
+        }
+        .video-container:hover video {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .contact, .about {
+            width: 90%;
+            max-width: 800px;
+            background: rgba(34, 34, 34, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            margin: 20px auto;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 30px;
+            }
+            .container, .media-section, .contact, .about {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">NETFLIX</div>
+    <div class="container">
+        <h1>Unlimited movies, TV shows, and more.</h1>
+        <p>Watch anywhere. Cancel anytime.</p>
+    </div>
+    
+    <div class="media-section">
+        <h2>Watch Animal Now!!</h2>
+        <div class="video-container">
+            <img src="https://images.indianexpress.com/2023/12/MixCollage-03-Dec-2023-05-38-PM-6597.jpg" alt="Movie Thumbnail">
+            <video controls>
+                <source src="videoplayback (1).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    
+    <div class="media-section">
+        <h2>Listen to Music</h2>
+        <div>
+            <h3>Song 1: Satranga</h3>
+            <audio controls>
+                <source src="Satranga - Animal 128 Kbps.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+        <div>
+            <h3>Song 2: Arbas Entry</h3>
+            <audio controls>
+                <source src="Abrars Entry Jamal Kudu - Animal 128 Kbps.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+        <div>
+            <h3>Song 3: Dolby Walya</h3>
+            <audio controls>
+                <source src="Dolby Walya.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+    </div>
+    
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@netflix.com</p>
+        <p>Phone: +1 234 567 890</p>
+        <p>Address: 123 Netflix St, Streaming City</p>
+    </div>
+    
+    <div class="about">
+        <h2>About Us</h2>
+        <p>Netflix is a leading streaming platform offering a vast library of movies, TV shows, and original content.</p>
+    </div>
+    
+    <script>
+        document.querySelector('.video-container').addEventListener('mouseenter', function () {
+            let video = this.querySelector('video');
+            video.play();
+        });
+
+        document.querySelector('.video-container').addEventListener('mouseleave', function () {
+            let video = this.querySelector('video');
+            video.pause();
+            video.currentTime = 0;
+        });
+    </script>
+</body>
+</html>
